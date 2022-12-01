@@ -9,10 +9,6 @@ google/electra-small-discriminator
 YituTech/conv-bert-base
 '''
 
-
-SEP_TOKEN = '[SEP]'
-CLS_TOKEN = '[CLS]'
-
 TRAIN_FILE_PATH = ['./data/TREC/trec_train.csv']
 TEST_FILE_PATH = ['./data/TREC/trec_test.csv']
 num_labels=6

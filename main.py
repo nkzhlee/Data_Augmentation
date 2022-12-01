@@ -12,7 +12,6 @@ from Constants import *
 from DataModules import SequenceDataset
 
 
-
 def train(args):
     wandb.init(project="Transformer", entity="zhaohuilee", config=config_dictionary)
     random.seed(123)
