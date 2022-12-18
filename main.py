@@ -13,7 +13,7 @@ from DataModules import SequenceDataset
 
 
 def train(args):
-    wandb.init(project="Transformer", entity="zhaohuilee", config=config_dictionary)
+    wandb.init(project="Data Augmentation", entity="psu-nlp", config=config_dictionary)
     random.seed(123)
     DEVICE = args.device
     print(DEVICE)
