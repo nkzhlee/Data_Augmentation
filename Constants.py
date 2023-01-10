@@ -9,19 +9,19 @@ google/electra-small-discriminator
 YituTech/conv-bert-base
 '''
 
-TRAIN_FILE_PATH = ['./data/sst2/train.csv']
-TEST_FILE_PATH = ['./data/sst2/validation.csv']
+TRAIN_FILE_PATH = ['./data/squad/train-v2.0.json']
+TEST_FILE_PATH = ['./data/squad/dev-v2.0.json']
 num_labels=2
 MAX_SEQ_LENGTH = 128
 GRADIENT_ACCUMULATION_STEPS = 4
 WARMUP_STEPS = 3
 
 hyperparameters = dict(
-    model_name="YituTech/conv-bert-base",
+    model_name="bert-base-uncased",
     batch_size=32,
-    lr=5e-5,
+    lr=2e-5,
     epochs=5,
-    dataset_name="sst2"
+    dataset_name="squad"
     )
 # wandb config
 
